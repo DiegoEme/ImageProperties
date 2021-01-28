@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finally</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <input type="file" id="imageLoader" name="imageLoader" />
+    <div class="btn" onclick="document.getElementById('imageLoader').click()">
+      <i class="fas fa-upload"></i>
+    </div>
+    <canvas id="imageCanvas"></canvas>
+    <button class="prop" id="properties">Mostrar Propiedades</button>
+    <div id="content"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
