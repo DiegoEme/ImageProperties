@@ -72,12 +72,20 @@ let rgbToHex = function (rgb) {
 
 
 properties.addEventListener('click', () => {
+
     let newElement = document.createElement('div');
     newElement.classList.add("properties")
     let li = content.appendChild(newElement)
+    if(arr.length>0){
+        li.innerHTML = `<p>Tamaño: ${arr[0]} KB</p>`;
+        li.innerHTML += `<p>Tipo: ${arr[1]}</p>`;
+        li.innerHTML += `<p>Ancho: ${arr[2]} px</p>`;
+        li.innerHTML += `<p>Alto: ${arr[3]} px</p>`;
+    } else {
+        li.innerHTML = `<p>Sube una imagen</p>`;
+    }
     
-    li.innerHTML = `<p>Tamaño: ${arr[0]} KB</p>`;
-    li.innerHTML += `<p>Tipo: ${arr[1]}</p>`;
-    li.innerHTML += `<p>Ancho: ${arr[2]} px</p>`;
-    li.innerHTML += `<p>Alto: ${arr[3]} px</p>`;
+
+    
+   
 })
